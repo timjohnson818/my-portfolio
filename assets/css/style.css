@@ -1,0 +1,71 @@
+:root{
+    --primary: #f8f7ec; 
+    --secondary: #464646;
+    --tertiary: #97ffcb;
+}
+
+header{
+    background: #464646;
+    display: flex;
+    margin: 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.hero-banner{
+    padding: 7em;
+    background-image: url(../images/austin-skyline.jpg);
+}
+
+body{
+    margin:0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--secondary);
+}
+
+h1{
+    background-color: #97ffcb;
+    padding: 35px 20px;
+    position: relative;
+    left: 250px;
+    font-size: 3em;
+    border-radius: 25px;  
+
+}
+
+h2{
+    color: var(--tertiary);
+    font-size: 2.5em;
+}
+
+nav{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    position: relative;
+    right: 100px; 
+}
+
+nav a{
+  text-decoration: none;
+  padding: 50px 20px;
+  color: var(--tertiary);
+  margin:5px 0px;
+  background-image: linear-gradient(270deg, var(--tertiary) 0%, var(--tertiary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: top;
+  transition: all 0.25s ease-in;
+  font-size: 1.5em;
+}
+
+nav a:hover{
+    background-size: 100% 100%;
+    color: var(--secondary);
+}
+
+.about-me{
+    
+}
