@@ -31,7 +31,8 @@ nav{
     position: relative;
     right: 10px; 
 }
-
+/*I really liked the nav bar from the example so I tired to replicate the concept and changing variables 
+to see what each modifier did and customized it to my liking*/
 nav a{
   text-decoration: none;
   padding: 50px 20px;
@@ -41,7 +42,7 @@ nav a{
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: top;
-  transition: all 0.25s ease-in;
+  transition: all 0.35s ease-in;
   font-size: 1.5em;
 }
 
@@ -50,7 +51,7 @@ nav a:hover{
     color: var(--secondary);
 }
 
-.hero-banner{
+.banner{
     display: flex;
     position: relative;
     left: 10%;
@@ -60,7 +61,7 @@ nav a:hover{
     justify-content: flex-start;
 }
 
-.hero-banner h2{
+.banner h2{
     display:flex;
     background: var(--secondary);
     border-radius: 25px;
@@ -169,4 +170,36 @@ h2{
 
   .example-5{
     background-image: url("../images/twilight-mountain.jpg");
+  }
+
+  footer h2{
+    border-color: var(--tertiary);
+    border-bottom: solid 4px;
+    margin-bottom: 20px; 
+  }
+
+  footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  footer a{
+    font-size: 2em;
+    color: var(--tertiary);
+  }
+
+  @media screen and (max-width: 980px) {
+    header{
+      flex-direction: column;
+    }
+    header h1{
+      left: 0px;
+    }
+
+    .banner{
+      left:0%
+    }
   }
